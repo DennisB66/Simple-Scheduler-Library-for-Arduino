@@ -2,7 +2,7 @@
 
 Simple Scheduler is a small but flexible library for Arduino and ESP8266 that implements a basic time based task scheduler.
 
-Multiple tasks can be attached to a single scheduler that will execute thes taks on a fixed msec interval. Mulple schedulers with each their own msec interval can be defined in parallel.
+Multiple tasks can be attached to a single scheduler that will execute these tasks on a fixed msec interval. Multiple schedulers with each their own interval can be defined in parallel.
 
 ## Functionality
 
