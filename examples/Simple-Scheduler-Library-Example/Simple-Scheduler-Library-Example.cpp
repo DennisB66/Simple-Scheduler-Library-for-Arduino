@@ -29,7 +29,7 @@ void setup()
   scheduler.attachHandler( print);
   scheduler.attachHandler( blink);
 
-  Serial.print( "# Ready") LF;
+  Serial.println( "# Ready");
   scheduler.start();
 }
 
