@@ -8,8 +8,6 @@
 
 #include <Arduino.h>
 #include "SimpleScheduler.h"
-// #include "SimpleDevice.h"
-// #include "SimpleUtils.h"
 
 #if defined(ESP8266)
 extern "C" {

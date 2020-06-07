@@ -8,7 +8,6 @@
 
 #include <Arduino.h>
 #include "SimpleTask.h"
-#include "SimplePrint.h"
 
 // create task
 SimpleTask::SimpleTask( TaskFunc func)
