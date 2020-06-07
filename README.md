@@ -20,6 +20,6 @@ stop()          // stop scheduler
 
 Version history:
 ```
-0.1	    // initial version
-0.11    // some cleanup
+0.1             // initial version
+0.11            // some cleanup
 ```
