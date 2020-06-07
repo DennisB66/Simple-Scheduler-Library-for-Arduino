@@ -4,16 +4,33 @@
 
 SimpleScheduler scheduler( 1000);
 
-void tick() { Serial.print("*"); }
+#define LED_OFF LOW
+#define LED_ON HIGH
+
+void print() { 
+  Serial.print( "*"); 
+}
+
+void blink() { 
+  static bool b = false; b = !b;
+
+  if ( b) {
+    digitalWrite( LED_BUILTIN, LED_ON);
+  } else {
+    digitalWrite( LED_BUILTIN, LED_OFF);
+  }
+}
 
 void setup()
 {
-  BEGIN( 9600);
+  Serial.begin( 9600);
+  pinMode( LED_BUILTIN, OUTPUT);
 
-  scheduler.attachHandler( tick);
+  scheduler.attachHandler( print);
+  scheduler.attachHandler( blink);
+
+  Serial.print( "# Ready") LF;
   scheduler.start();
-
-  PRINT( "# Ready") LF;
 }
 
 void loop()

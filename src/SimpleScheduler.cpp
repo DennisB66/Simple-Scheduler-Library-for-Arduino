@@ -1,4 +1,4 @@
-// Copyright  : Dennis Buis (2017, 2020)
+// Copyright  : Dennis Buis (2017,2020)
 // License    : MIT
 // Platform   : Arduino
 // Library    : Simple Scheduler Library for Arduino & ESP
@@ -28,18 +28,18 @@ SimpleSchedulerTask::SimpleSchedulerTask( TaskFunc func)
 SimpleScheduler::SimpleScheduler( unsigned long msec)
 : SimpleTaskList()
 {
-  _msec = _max( 1, msec);
+  _msec = _max( (unsigned long) 1, msec);
 
 #if defined(ESP8266)
   os_timer_disarm( &myTimer);
   os_timer_setfn ( &myTimer, _handle, NULL);
-  //os_timer_arm   ( &Timer1, _msec  , true);
+  // os_timer_arm   ( &Timer1, _msec  , true);
 #else
   Timer1.initialize( _msec * 1000);
 #endif
 
-  attachHandler( SimpleDevice::handle);
-  //start();
+  // attachHandler( SimpleDevice::handle);
+  // start(); 
 }
 
 void SimpleScheduler::attachHandler( TaskFunc func)
