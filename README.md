@@ -16,7 +16,7 @@ stop()          // stop scheduler
 
 ## Library Dependencies
 
-- https://github.com/DennisB66/Simple-Utility-Library-for-Arduino
+- https://github.com/PaulStoffregen/TimerOne (for arduino / not required for esp8266)
 
 Version history:
 ```
