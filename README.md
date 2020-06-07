@@ -8,10 +8,10 @@ Multiple tasks can be attached to a single scheduler that will execute these tas
 
 The functions in the class SimpleScheduler include:
 ```
-constructor     // initialize scheduler with a msec interval
-attachHandler() // attach new task handler function
-start()         // start scheduler
-stop()          // stop scheduler
+SimpleScheduler     // constructor + set interval (msec)
+attachHandler()     // attach new task handler function
+start()             // start scheduler
+stop()              // stop scheduler
 ```
 
 ## Library Dependencies
@@ -20,6 +20,6 @@ stop()          // stop scheduler
 
 Version history:
 ```
-0.1             // initial version
-0.11            // some cleanup
+0.1                 // initial version
+0.11                // some cleanup
 ```
