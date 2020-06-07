@@ -1,15 +1,15 @@
-// Copyright  : Dennis Buis (2017)
+// Copyright  : Dennis Buis (2017, 2020)
 // License    : MIT
 // Platform   : Arduino
-// Library    : Simple Control Library for Arduino
+// Library    : Simple Scheduler Library for Arduino & ESP
 // File       : SimpleScheluder.cpp
-// Purpose    : Receiving input from buttons (incuding auto-repeat)
-// Repository : https://github.com/DennisB66/Simple-Control-Library-for-Arduino
+// Purpose    : Setting up a simple task scheduler
+// Repository : https://github.com/DennisB66/Simple-Scheduler-Library-for-Arduino
 
 #include <Arduino.h>
 #include "SimpleScheduler.h"
-#include "SimpleDevice.h"
-#include "SimpleUtils.h"
+// #include "SimpleDevice.h"
+// #include "SimpleUtils.h"
 
 #if defined(ESP8266)
 extern "C" {

@@ -1,10 +1,10 @@
 // Copyright  : Dennis Buis (2017)
 // License    : MIT
 // Platform   : Arduino
-// Library    : Simple Control Library for Arduino
+// Library    : Simple Scheduler Library for Arduino
 // File       : SimpleScheluder.h
-// Purpose    : Receiving input from buttons (incuding auto-repeat)
-// Repository : https://github.com/DennisB66/Simple-Control-Library-for-Arduino
+// Purpose    : Setting up a simple task scheduler
+// Repository : https://github.com/DennisB66/Simple-Scheduler-Library-for-Arduino
 
 #ifndef _SIMPLE_SCHEDULER_H
 #define _SIMPLE_SCHEDULER_H
